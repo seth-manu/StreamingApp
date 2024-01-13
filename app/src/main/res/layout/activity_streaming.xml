@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".MainActivity">
+
+            <EditText
+                    android:id="@+id/editTextQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+                    android:hint="Enter your question"
+                    android:inputType="text"
+                    android:padding="8dp" />
+
+            <!-- Submit Button -->
+            <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editTextQuestion"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Submit" />
+
+            <!-- Clear Button -->
+            <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextQuestion"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Clear" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnSubmit"
+                    android:layout_marginTop="16dp"
+                    android:hint="Your Answer"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:padding="8dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</layout>
